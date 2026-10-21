@@ -77,14 +77,3 @@ for record in records:
 
 print(f"\nRecords over limit: {over_limit_count}")
 
-
-# ==========================================================================
-# 4. Before you finish:
-#
-#    [x] Run it and check every record's numbers by hand
-#        (12/400 = 3%, 95/100 = 95%, 120/100 = 120%, 45/60 = 75%, 91/100 = 91%)
-#    [x] Check every method only reads/changes its OWN object (self) -
-#        percent() and status() only use self.value and self.limit
-#    [x] Check every method and __init__ has a one-line docstring
-#    [x] Checked r1 and r2 are independent: changing records[0].value did not
-#        change records[1].value

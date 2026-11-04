@@ -2,7 +2,7 @@
 RECORD CHECK  -  my version
 ===========================
 
-Name  :  ss
+Name  :  Malak Hosa
 Lane  :  Cyber Security
 Date  :  04 November 2026
 
@@ -69,20 +69,3 @@ for raw_record in raw_records:
 
 print(f"\nSummary: {parsed_count} records parsed, {flagged_count} flagged, {failed_count} could not be parsed.")
 
-
-# ==========================================================================
-# Before you finish:
-#
-#    [x] Ran it against 9 genuinely messy raw records (mixed case, extra spaces,
-#        spaces round the "=", a tab at the start of one line).
-#    [x] Ran it with a value that will not convert to a number
-#        (ATTEMPTS=many). The error was:
-#        ValueError: invalid literal for int() with base 10: 'many'
-#        It means the text "many" is not a whole number, so int() cannot convert it.
-#    [x] Checked one record by hand:
-#        "  src = 10.0.0.8 , Attempts=3 , result=Success  "
-#        strip + lower  -> "src = 10.0.0.8 , attempts=3 , result=success"
-#        split on ","   -> ["src = 10.0.0.8 ", " attempts=3 ", " result=success"]
-#        clean each key=value, convert attempts -> {'src': '10.0.0.8', 'attempts': 3, 'result': 'success'}
-#        result is not "failed", so the status is OK (matches the output above).
-#    [x] Every function does one job and has a docstring.

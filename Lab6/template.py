@@ -57,15 +57,3 @@ plt.ylabel("Number of source IPs")
 plt.xticks(rotation=0)
 plt.tight_layout()
 plt.savefig("login_status_counts.png")
-plt.close()
-
-
-# ==========================================================================
-# Before you finish:
-#    [x] Checked percent/status by hand for one row:
-#        10.0.0.12 -> 380 / 400 * 100 = 95.0, which is 90 or more but under 100,
-#        so the status is WARNING (matches the output above).
-#    [x] No "and"/"or" in any condition. The only condition is
-#        df["status"] != "OK", so no & is needed.
-#    [x] Every column in the code exists in login_attempts.csv with the same case:
-#        source_ip, failed_logins, total_attempts (+ percent, status added here).

@@ -66,15 +66,3 @@ while True:
 
 print(f"\nRecords over limit: {over_limit_count}")
 
-
-# ==========================================================================
-# 5. Before you finish:
-#
-#    [x] Run it three times with different numbers
-#        (10.0.0.5 / 12 / 400 -> OK, 10.0.0.9 / 95 / 100 -> WARNING,
-#         10.0.0.7 / 120 / 100 -> OVER LIMIT)
-#    [x] Run it with a total of 0 and note the error (do not fix it yet)
-#        Error: ZeroDivisionError: float division by zero
-#        It happens inside check(), on (value / limit) when limit is 0.
-#    [x] Check every function does one job - status_of decides, check
-#        calculates, print_report prints

@@ -9,11 +9,10 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-# ---- Settings: the only part you change for your own data ----------------
 
 URL = "https://api.github.com/orgs/python/repos"
 PARAMS = {"per_page": 100}
-RECORDS_KEY = None                # the key that holds the list of records (None if the reply is already a list)
+RECORDS_KEY = None                # the key that holds the list of records (None if the replyis already a list)
 
 RENAME = {}                       # ugly column name -> short column name
 KEEP = ["name", "language", "stargazers_count", "forks_count", "open_issues_count", "size", "created_at"]
